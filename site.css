@@ -1,0 +1,48 @@
+.title-grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 10px;
+  border: 1px solid lightgray;
+}
+
+.title-grid-item {
+  background-color: lightgray;
+  border: 1px solid lightgray;
+  padding: 12px;
+  font-size: 15px;
+  text-align: left;
+}
+
+table, th, td
+{
+  border-collapse: separate;
+  border-spacing:2px;
+  border-style: solid;
+  border-width:thin;
+  text-align: left;
+}
+
+table{background: white;}
+
+th{background: lightgray;}
+
+@media only screen and (max-width: 600px) {
+  table{
+        width:100%;
+    }
+
+    td{
+        display:block;
+        width:100%;
+    }
+
+    tr{
+        display:block;
+        margin-bottom:30px;
+    }
+  
+    th{
+    display:none;
+    }
+  
+}
